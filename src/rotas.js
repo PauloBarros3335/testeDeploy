@@ -14,7 +14,11 @@ const verificarUsuarioLogado = require("./intermediarios/autenticacao");
 const rotas = express();
 // Rota GET na raiz ("/")
 rotas.get("/", (req, res) => {
-  return res.send("Esta é a resposta da rota GET na raiz.");
+  return res.send(`A equipe da Cubos Academy,
+   Simplemente quero agradecer por tudo.
+   Esta jornada foi incrivel.Apendir muito.
+   Atenciosamente,
+   [Paulo Barros]`);
 });
 rotas.get("/usuario", detalharUsuario);
 rotas.post("/usuario", validarCorpoRequisicao(schemaUsuario), cadastrarUsuario);
