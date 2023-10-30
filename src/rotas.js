@@ -16,14 +16,12 @@ const rotas = express();
 rotas.get("/", (req, res) => {
   return res.send("Esta é a resposta da rota GET na raiz.");
 });
-
+rotas.get("/usuario", detalharUsuario);
 rotas.post("/usuario", validarCorpoRequisicao(schemaUsuario), cadastrarUsuario);
 rotas.get("/categoria", listarCategorias);
 rotas.post("/login", validarCorpoRequisicao(schemaLogin), login);
 
 rotas.use(verificarUsuarioLogado);
-
-rotas.get("/usuario", detalharUsuario);
 
 rotas.put(
   "/usuario/:id",
