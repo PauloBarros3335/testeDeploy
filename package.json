@@ -2,10 +2,12 @@
   "name": "desafio_backend_modulo_05_sistema_pdv_dbe_t07_ifood",
   "version": "1.0.0",
   "description": "![](https://i.imgur.com/xG74tOh.png)",
-  "main": "index.js",
+ "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "start": "start ./src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +22,8 @@
     "knex": "^3.0.1",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.7",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "start": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
